@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">    
+   <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <form id="formulario">
+        <div>
+            <Label>Nombre Completo:</Label>
+            <input type="text" class="mb-3 form-control" id="NombreCompleto" >
+          </div>
+          
+          <div>
+            <Label>Matricula:</Label>
+            <input type="text" class="mb-3 form-control" id="Matricula">
+          </div>
+          <div>
+            <Label>Materia:</Label>
+            <input type="text" class="mb-3 form-control" id="Materia">
+          </div>
+          <div>
+            <Label>Nota:</Label>
+            <input type="text" class="mb-3 form-control" id="Nota">
+          </div>
+            
+            <input class="btn btn-primary mb-3" id="BtnAdd" type="button" value="Agregar" onclick="">
+            <input class="btn btn-primary mb-3" id="btnWatch"  type="button" value="Ver" onclick="Get()">
+            <input class="hide  btn btn-primary mb-3" id="btnUpdate"  type="button" value="Actualizar" onclick="Get()">
+            
+       
+
+    </form>
+
+    <table class="table border" id="Estudiantes">
+        <thead>
+          <th>Nombre Completo</th>
+          <th>Matricula</th>
+          <th>Materia</th>
+          <th>Nota</th>
+          <th></th>
+          
+  
+        </thead>
+  
+        <tbody id="tbody">
+  
+  
+  
+        </tbody>
+  
+  
+      </table>
+    
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <script src="./app.js"></script>
+</body>
+</html>
